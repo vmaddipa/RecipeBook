@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../src/assets/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    src: url("../src/assets/OpenSans-Bold.ttf") format("truetype");
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: italic;
+    src: url("../src/assets/OpenSans-RegularItalic.ttf") format("truetype");
+    font-style: italic;
+}
