@@ -3,30 +3,12 @@
 html,
 body {
     height: 100%;
-}
-
-body {
     margin: 0;
-    font-family: 'Open Sans', Roboto, 'Helvetica Neue', sans-serif;
 }
 
-@font-face {
-    font-family: 'Open Sans';
-    src: url("../src/assets/OpenSans-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-weight: bold;
-    src: url("../src/assets/OpenSans-Bold.ttf") format("truetype");
-    font-style: bold;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-weight: italic;
-    src: url("../src/assets/OpenSans-RegularItalic.ttf") format("truetype");
-    font-style: italic;
-}
+@import '~@angular/material/theming';
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$custom-typography: mat-typography-config( $font-family: 'Open Sans');
+@include angular-material-typography($custom-typography);
+@include mat-core($custom-typography);
